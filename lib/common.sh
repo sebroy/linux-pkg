@@ -1094,9 +1094,9 @@ function set_changelog() {
 	# then deduce it. If there's a debian/control file that specifies that
 	# package name, then use it. Otherwise, default to the name of the
 	# linux-pkg directory name. This can't always be the default because
-	# for some packages (for some reasons lost to the sands of time), those
-	# are different.  For example, the challenge-response linux-pkg
-	# directory generates the pam-challenge-response debian package.
+	# for some packages (for reasons lost to the sands of time), those are
+	# different.  For example, the challenge-response linux-pkg directory
+	# generates the pam-challenge-response debian package.
 	#
 	if [[ -n $1 ]]; then
 		src_package=$1
